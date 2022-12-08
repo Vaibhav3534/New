@@ -1,0 +1,46 @@
+{
+  "name": "vowelweb-nagpur-assiignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+   
+    "start": "node index.js",
+    "server":"nodemon index.js",
+    "client_side":"npm start --prefix client_side",
+    "dev":"concurrently \"npm start\" \"npm run client_side\" "
+},
+  "repository":{
+    "type": "git",
+    "url": "git+https://github.com/Vaibhav3534/Email-based-Authentication.git"
+  },
+  "keywords": [],
+
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaibhav3534/Email-based-Authentication/issues"
+  },
+  "homepage": "https://github.com/Vaibhav3534/Email-based-Authentication#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.6",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.5",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.12",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/nodemailer": "^6.4.6",
+    "concurrently": "^7.6.0"
+  },
+  "description": ""
+}
