@@ -81,7 +81,7 @@ const __dirname = path.dirname(__filename)
 
 app.use(express.static(path.join(__dirname,"./client_side/build")))
 app.get("*", function(req, res){
-    res.sendFile(path.join(__dirname, "client_side/build/index.html"))
+    res.sendFile(path.join(__dirname, "./client_side/build/index.html"))
 })
 
 //post api for addition
