@@ -34,6 +34,16 @@ app.use(express.json())
 app.use(cors())
 app.use(cookieParser())
 
+const port = 8080
+app.listen(port, async (req, res) => {
+    try {
+        await connection;
+        console.log("connected to database")
+    } catch (error) {
+        console.log(error.message)
+    }
+})
+
 
 app.get("/api", (req, res) => {
     console.log("inside api")
@@ -95,13 +105,5 @@ app.post("/add", async(req, res)=>{
 
 
 // console.log(port)
-const port = 8080
-app.listen(port, async (req, res) => {
-    try {
-        await connection;
-        console.log("connected to database")
-    } catch (error) {
-        console.log(error.message)
-    }
-})
+
 
